@@ -14,7 +14,6 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         self.wfile.write(b"Hello, World!")
 
 
-# Настраиваем сервер
 host = "0.0.0.0"
 port = 8080
 server = HTTPServer((host, port), SimpleHTTPRequestHandler)
